@@ -1,0 +1,2 @@
+def get_prompt(user_input: str) -> str:
+    return f"Convert the following user input into an activity and a cron expression:\n\nUser Input: {user_input}\n\nResponse format:\nActivity: <activity>\nCron: <cron_expression>"

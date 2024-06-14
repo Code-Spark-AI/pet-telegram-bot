@@ -1,0 +1,5 @@
+python-telegram-bot==20.0
+croniter==1.0.15
+langchain_community
+openai
+telegram
