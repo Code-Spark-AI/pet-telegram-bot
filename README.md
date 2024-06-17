@@ -10,6 +10,24 @@ This Telegram bot helps you create and manage detailed profiles for your pets, i
 
 ## Interaction Flow
 
+## Initializing the Database Schema
+
+To set up the database schema for the Pet Bot application, run the following command:
+
+```text
+sqlite3 pet_bot.db < db_schema.sql
+```
+
+
+**Usage**:
+- This command initializes the SQLite database `pet_bot.db` with the schema defined in `db_schema.sql`.
+
+**When to Use**:
+- Run this command during the initial setup of the application or when setting up the database schema for the first time.
+
+**Potential Issues**:
+- Not running this command may result in missing database tables or an incorrect database structure, leading to database errors or the application not functioning as expected.
+
 ### Start the Bot
 
 To start the bot, send the `/start` command. The bot will guide you through providing details about your pet.
@@ -168,6 +186,3 @@ pip install -r requirements.txt
 ## License
 
 This project is licensed under the MIT License.
-
-
-sqlite3 pet_bot.db < db_schema.sql
